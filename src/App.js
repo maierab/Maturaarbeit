@@ -1,17 +1,12 @@
 import './App.css';
 import React from 'react';
 
-function clickedon(){
-  alert('clicked!')
-}
+import {button} from "./components/button"
 
 function App() {
   return (
     <div className="App">
-      <button onClick={clickedon}>
-        start
-      </button>
-
+      <button>Start Flashcards</button>
     </div>
   );
 }
