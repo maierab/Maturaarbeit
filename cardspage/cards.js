@@ -58,10 +58,12 @@ KARTEN = [
 ];
 
 var index = -1;
+var flippied = false;
 
 function next() {
     if (index + 1 < KARTEN.length) {
         index = index + 1;
+        flippied = false
         document.getElementById("card").innerHTML = KARTEN[index].latin_representation;
     }
 }
@@ -69,12 +71,18 @@ function next() {
 function prev() {
     if (index > 0) {
         index = index - 1;
+        flippied = false
         document.getElementById("card").innerHTML = KARTEN[index].latin_representation;
     }
 }
 
 function flip() {
-    document.getElementById("card").innerHTML = KARTEN[index].kana_representation;
+    flippied = !flippied;
+    if (flippied) {
+        document.getElementById("card").innerHTML = KARTEN[index].kana_representation;
+    } else {
+        document.getElementById("card").innerHTML = KARTEN[index].latin_representation;
+    }
 }
 
 window.onload = function() {
