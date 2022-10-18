@@ -1,5 +1,10 @@
-button {
+.cards-button {
     border-radius: 35px;
     background: #f3f3f6;
     box-shadow:  16px 16px 33px #cfcfd1, -16px -16px 33px #ffffff;
+}
+
+#card {
+    padding: 100px;
+    background-color: orange;
 }
