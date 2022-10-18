@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../main.css" />
     <link rel="stylesheet" href="./cards.css" />
     <script src="./cards.js"></script>
   </head>
-  <header>
-    <a href="../index.html" class="back-arrow">&larr;</a>
-  </header>
-<body>
+  <body>
+    <header>
+      <div>
+        <a href="../index.html" class="back-arrow">&larr;</a>
+        <p>settings</p>
+      </div>
 
-<button onclick="prev()">Prev</button>
+    </header>
 
-<div>
-  <p id="card"></p>
-</div>
+    <div>
+      <button onclick="flip()">flip</button>
+    </div>
 
-<button onclick="flip()">flip</button>
-<button onclick="next()">Next</button>
+    <div>
+      <p id="card"></p>
+    </div>
 
-</body>
+    <div>
+      <button onclick="prev()">Prev</button>
+      <button onclick="next()">Next</button>
+    </div>
+  </body>
 </html>
