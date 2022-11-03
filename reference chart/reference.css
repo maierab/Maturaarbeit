@@ -1,12 +1,32 @@
 
 .kana-row{
-    color:#1f1f1f
+    font-size: 16pt;
+    color:#1f1f1f;
 }
 
 .romaji-row{
-    color:gray
+    height: 22px;
+    vertical-align: top;
+    font-size: smaller;
+    color:gray;
 }
 
 table{
     text-align: center;
+    width: 20%;
 }
+
+/*
+another color schemem option
+
+.identifyer {
+    color: #3c3c3c;
+    background-color: #33ebbd;
+    height: 30px;
+} 
+*/
+
+.identifyer {
+    color: #0F9482;
+    height: 30px;
+} 
