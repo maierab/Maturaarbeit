@@ -1,7 +1,12 @@
 .cards-button {
-    border-radius: 35px;
-    background: #f3f3f6;
-    box-shadow:  16px 16px 33px #cfcfd1, -16px -16px 33px #ffffff;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 50%;
+
+    background: #e0e0e0;
+    box-shadow:  7px 7px 13px #bebebe, 
+    -7px -7px 13px #ffffff;
+
 }
 
 #card {
@@ -10,7 +15,32 @@
     margin: 0 auto;
     padding: 100px 60px;
     border-radius: 45px;
-    background: #eaeaea;
+    background: #e0e0e0;
     box-shadow:  14px 14px 22px #d0d0d0,
                 -14px -14px 22px #ffffff;  
 }
+
+
+
+button {
+    all: unset
+}
+
+.arrow-button {
+    padding: 5px 12px;
+    border-radius: 50%;
+
+    background: #e0e0e0;
+    box-shadow:  3px 3px 6px #bebebe,
+             -3px -3px 6px #ffffff;
+}
+
+/*
+.arrow-prev{
+    float: left;
+}
+
+.arrow-next{
+    float: right;
+}
+*/
