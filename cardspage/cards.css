@@ -12,12 +12,14 @@
 #card {
     width: 25%;
     height: 25%;
-    margin: 0 auto;
+    margin: 40px auto;
     padding: 100px 60px;
     border-radius: 45px;
     background: #e0e0e0;
     box-shadow:  14px 14px 22px #d0d0d0,
                 -14px -14px 22px #ffffff;  
+    font-size: 50pt;
+
 }
 
 
@@ -33,6 +35,10 @@ button {
     background: #e0e0e0;
     box-shadow:  3px 3px 6px #bebebe,
              -3px -3px 6px #ffffff;
+}
+
+.container{
+    display: flex;    
 }
 
 /*
