@@ -12,6 +12,7 @@
 }
 
 table{
+    border-collapse: separate; 
     text-align: center;
     width: 20%;
 }
@@ -29,4 +30,11 @@ another color schemem option
 .identifyer {
     color: #0F9482;
     height: 30px;
-} 
+    /*row-gap: 100px;*/
+    /*padding-top: 100px;*/
+    border-spacing: 0 100px;
+}
+
+.identifyer td {
+    padding-top: 100px;
+}

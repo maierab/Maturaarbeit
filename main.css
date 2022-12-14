@@ -18,6 +18,7 @@ body {
 header {
 	height:50px;
 	background-color: #0f9482;
+
 }
 
 table {
@@ -40,16 +41,32 @@ table {
 	color:#c6c6c6;
 }
 
+
 .main-button {
 	display: block;
-	padding: 20px;
+	align-self: center;
+	padding: 50px 30px;
 	margin: 30px;
 	border-radius: 45px;
 	background: #eaeaea;
 	box-shadow:  14px 14px 22px #d0d0d0,
              	-14px -14px 22px #ffffff;
+	
 }
+
+#start-button{
+	margin-top: 50px;
+}
+
+#back-button {
+	align-items: left;
+} 
 
 .header-text{
 	color:#f3f3f6;
+}
+
+
+h2{
+	padding: 50% 50%;
 }

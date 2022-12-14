@@ -55,6 +55,37 @@ KARTEN = [
     {"kana_representation": "を", "latin_representation": "wo"}, 
 
     {"kana_representation": "ん", "latin_representation": "n"}, 
+
+
+    {"kana_representation": "が", "latin_representation": "ga", "category": "voiced"}, 
+    {"kana_representation": "ぎ", "latin_representation": "gi", "category": "voiced"}, 
+    {"kana_representation": "ぐ", "latin_representation": "gu", "category": "voiced"}, 
+    {"kana_representation": "げ", "latin_representation": "ge", "category": "voiced"}, 
+    {"kana_representation": "ご", "latin_representation": "go", "category": "voiced"}, 
+
+    {"kana_representation": "ざ", "latin_representation": "za", "category": "voiced"}, 
+    {"kana_representation": "じ", "latin_representation": "ji", "category": "voiced"}, 
+    {"kana_representation": "ず", "latin_representation": "zu", "category": "voiced"}, 
+    {"kana_representation": "ぜ", "latin_representation": "ze", "category": "voiced"}, 
+    {"kana_representation": "ぞ", "latin_representation": "zo", "category": "voiced"}, 
+   
+    {"kana_representation": "だ", "latin_representation": "da", "category": "voiced"}, 
+    {"kana_representation": "ぢ", "latin_representation": "ji", "category": "voiced"}, 
+    {"kana_representation": "づ", "latin_representation": "zu", "category": "voiced"}, 
+    {"kana_representation": "で", "latin_representation": "de", "category": "voiced"}, 
+    {"kana_representation": "ど", "latin_representation": "do", "category": "voiced"}, 
+    
+    {"kana_representation": "ば", "latin_representation": "ba", "category": "voiced"}, 
+    {"kana_representation": "び", "latin_representation": "bi", "category": "voiced"}, 
+    {"kana_representation": "ぶ", "latin_representation": "bu", "category": "voiced"}, 
+    {"kana_representation": "べ", "latin_representation": "be", "category": "voiced"}, 
+    {"kana_representation": "ぼ", "latin_representation": "bo", "category": "voiced"}, 
+
+    {"kana_representation": "ぱ", "latin_representation": "pa", "category": "voiced"}, 
+    {"kana_representation": "ぴ", "latin_representation": "pi", "category": "voiced"}, 
+    {"kana_representation": "ぷ", "latin_representation": "pu", "category": "voiced"}, 
+    {"kana_representation": "ぺ", "latin_representation": "pe", "category": "voiced"}, 
+    {"kana_representation": "ぽ", "latin_representation": "po", "category": "voiced"}, 
 ];
 
 var index = -1;

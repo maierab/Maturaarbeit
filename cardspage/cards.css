@@ -10,8 +10,8 @@
 }
 
 #card {
-    width: 25%;
-    height: 25%;
+    width:200px;
+    height: 100px;
     margin: 40px auto;
     padding: 100px 60px;
     border-radius: 45px;
@@ -19,7 +19,6 @@
     box-shadow:  14px 14px 22px #d0d0d0,
                 -14px -14px 22px #ffffff;  
     font-size: 50pt;
-
 }
 
 
@@ -31,6 +30,8 @@ button {
 .arrow-button {
     padding: 5px 12px;
     border-radius: 50%;
+
+    font-weight: bold;
 
     background: #e0e0e0;
     box-shadow:  3px 3px 6px #bebebe,
