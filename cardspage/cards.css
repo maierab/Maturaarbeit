@@ -42,6 +42,19 @@ button {
     display: flex;    
 }
 
+
+.settings-icon{
+	text-decoration: none;
+	font-size: 18pt;
+    font-weight: bold;
+    color:#f3f3f6;
+}
+
+.settings-icon:hover{
+   color:#c6c6c6;
+}
+
+
 /*
 .arrow-prev{
     float: left;
@@ -49,5 +62,5 @@ button {
 
 .arrow-next{
     float: right;
-}
+}   
 */

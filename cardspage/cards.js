@@ -119,3 +119,21 @@ function flip() {
 window.onload = function() {
     next();
 };
+
+document.addEventListener('keydown', (e) => {
+    if (e.code === "Space") {
+        flip();
+    }
+    if (e.code === "ArrowDown") {
+        flip();
+    }
+    if (e.code === "ArrowUp") {
+        flip();
+    }
+    if (e.code === "ArrowRight") {
+        next();
+    }
+    if (e.code === "ArrowLeft") {
+        prev();
+    }
+});

@@ -29,15 +29,9 @@ table {
 
 
 .back-button {
-	text-align: left;
-	vertical-align: middle;
 	text-decoration: none;
 	font-size: 18pt;
 	color:#f3f3f6;
-	padding: 10px;
-	
-	align-items: left;
-	position: absolute;
 }
 
 .back-button:hover {
@@ -67,4 +61,23 @@ table {
 
 .header-centered {
 	margin: auto;
+}
+
+.header-left {
+	vertical-align: middle;
+	padding: 15px;
+	
+	text-align: left;
+	align-items: left;
+	position: absolute;
+}
+
+.header-right {
+	vertical-align: middle;
+	padding: 15px;
+	
+	text-align: right;
+	align-items: right;
+	position: absolute;
+	right: 0;
 }
