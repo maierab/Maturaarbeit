@@ -17,7 +17,16 @@
 
     <div class="container">
       <button class="cards-button arrow-button arrow-prev" onclick="prev()" onkeyup="event.preventDefault()">&lsaquo;</button>
-      <p id="card"></p>
+      <div class="flip-card">
+        <div id="flip-card-inner" class="flip-card-inner">
+          <div id="card-front" class="flip-card-front">
+            Front
+          </div>
+          <div id="card-back" class="flip-card-back">
+            Back
+          </div>
+        </div>
+      </div>
       <button class="cards-button arrow-button arrow-next" onclick="next()" onkeyup="event.preventDefault()">&rsaquo;</button>
     </div>
     <div>

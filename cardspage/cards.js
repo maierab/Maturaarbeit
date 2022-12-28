@@ -95,7 +95,9 @@ function next() {
     if (index + 1 < KARTEN.length) {
         index = index + 1;
         flippied = false
-        document.getElementById("card").innerHTML = KARTEN[index].latin_representation;
+        document.getElementById("card-front").innerHTML = KARTEN[index].latin_representation;
+        document.getElementById("card-back").innerHTML = KARTEN[index].kana_representation;
+        document.getElementById("flip-card-inner").classList.remove("flip-card-inner-flipped");
     }
 }
 
@@ -103,16 +105,18 @@ function prev() {
     if (index > 0) {
         index = index - 1;
         flippied = false
-        document.getElementById("card").innerHTML = KARTEN[index].latin_representation;
+        document.getElementById("card-front").innerHTML = KARTEN[index].latin_representation;
+        document.getElementById("card-back").innerHTML = KARTEN[index].kana_representation;
+        document.getElementById("flip-card-inner").classList.remove("flip-card-inner-flipped");
     }
 }
 
 function flip() {
     flippied = !flippied;
     if (flippied) {
-        document.getElementById("card").innerHTML = KARTEN[index].kana_representation;
+        document.getElementById("flip-card-inner").classList.add("flip-card-inner-flipped");
     } else {
-        document.getElementById("card").innerHTML = KARTEN[index].latin_representation;
+        document.getElementById("flip-card-inner").classList.remove("flip-card-inner-flipped");
     }
 }
 
