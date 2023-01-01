@@ -9,15 +9,16 @@
 
 }
 
-.card {
-    /*width:300px;
+/*.card {
+    width:300px;
     height: 100px;
     border-radius: 45px;
     background: #e0e0e0;
     box-shadow:  14px 14px 22px #d0d0d0,
                 -14px -14px 22px #ffffff;  
-    font-size: 50pt;*/
+    font-size: 50pt;
 }
+*/
 
 
 
@@ -26,15 +27,25 @@ button {
 }
 
 .arrow-button {
-    padding: 5px 12px;
+    padding: 8px 15px;
     border-radius: 50%;
 
     font-weight: bold;
 
     background: #e0e0e0;
-    box-shadow:  3px 3px 6px #bebebe,
-             -3px -3px 6px #ffffff;
+    box-shadow:  4px 4px 6px #bebebe,
+             -4px -4px 6px #ffffff;
 }
+
+.arrow-button:active {
+    transform: translateY(2px);
+
+    background: #e0e0e0;
+    box-shadow:  2px 2px 6px #bebebe,
+             -2px -2px 6px #ffffff;
+}
+
+
 
 .container{
     display: flex;    
@@ -102,8 +113,11 @@ button {
     backface-visibility: hidden;
 }
   
+/*
 .flip-card-front {
+    
 }
+*/
   
 
 .flip-card-back {
