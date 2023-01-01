@@ -122,6 +122,7 @@ function flip() {
 
 window.onload = function() {
     next();
+    document.getElementById("flip-card-everything").addEventListener("click", flip); 
 };
 
 document.addEventListener('keydown', (e) => {
@@ -141,3 +142,21 @@ document.addEventListener('keydown', (e) => {
         prev();
     }
 });
+
+let touchstartX = 0
+let touchendX = 0
+    
+function checkDirection() {
+  if (touchendX < touchstartX) next(); //for left swipes
+  if (touchendX > touchstartX) prev(); //for right swipes
+}
+
+document.addEventListener('touchstart', e => {
+  touchstartX = e.changedTouches[0].screenX
+})
+
+document.addEventListener('touchend', e => {
+  touchendX = e.changedTouches[0].screenX
+  checkDirection()
+})
+
