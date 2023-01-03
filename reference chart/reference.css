@@ -1,20 +1,20 @@
 
 .kana-row{
-    font-size: 16pt;
+    font-size: clamp(16pt, 2vw, 64pt);
     color:#1f1f1f;
 }
 
 .romaji-row{
-    height: 22px;
+    height: 3.5vmax;
     vertical-align: top;
-    font-size: smaller;
+    font-size: clamp(9pt, 1.2vw, 50pt);
     color:gray;
 }
 
 table{
     border-collapse: separate; 
     text-align: center;
-    width: 20%;
+    width: 30%;
 }
 
 /*
@@ -33,8 +33,4 @@ another color schemem option
     /*row-gap: 100px;*/
     /*padding-top: 100px;*/
     border-spacing: 0 100px;
-}
-
-.identifyer td {
-    padding-top: 20px;
 }

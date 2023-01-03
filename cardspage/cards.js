@@ -89,25 +89,32 @@ KARTEN = [
 ];
 
 var index = -1;
+var japaneseish = false;
 var flippied = false;
 
 function next() {
     if (index + 1 < KARTEN.length) {
         index = index + 1;
-        flippied = false
-        document.getElementById("card-front").innerHTML = KARTEN[index].latin_representation;
-        document.getElementById("card-back").innerHTML = KARTEN[index].kana_representation;
-        document.getElementById("flip-card-inner").classList.remove("flip-card-inner-flipped");
+        japaneseish = false;
+        updateCardText();
     }
 }
 
 function prev() {
     if (index > 0) {
         index = index - 1;
-        flippied = false
+        japaneseish = false;
+        updateCardText();
+    }
+}
+
+function updateCardText() {
+    if (!flippied) {
         document.getElementById("card-front").innerHTML = KARTEN[index].latin_representation;
         document.getElementById("card-back").innerHTML = KARTEN[index].kana_representation;
-        document.getElementById("flip-card-inner").classList.remove("flip-card-inner-flipped");
+    } else {
+        document.getElementById("card-front").innerHTML = KARTEN[index].kana_representation;
+        document.getElementById("card-back").innerHTML = KARTEN[index].latin_representation;
     }
 }
 
@@ -122,7 +129,7 @@ function flip() {
 
 window.onload = function() {
     next();
-    document.getElementById("flip-card-everything").addEventListener("click", flip); 
+    document.getElementById("flip-card-everything").addEventListener("click", flip); //had to put this here cause the id doesnt exist until it has loaded in
 };
 
 document.addEventListener('keydown', (e) => {

@@ -13,10 +13,13 @@ a{
 
 body {
 	background-color: #e0e0e0;
+	min-width:300px;
+	min-height: 200px;
 }
 
 header {
 	height:50px;
+	height: 8vh;
 	background-color: #0f9482;
 	display: flex;
 }
@@ -38,27 +41,29 @@ table {
 	color:#c6c6c6;
 }
 
+.back-button:active {
+    transform: translateY(2px);
+}
 
 .main-button {
 	display: block;
 	align-self: center;
-	width:50%;
-	margin: 30px auto;
+	width: 50%;
+	margin: 20px auto;
 	border-radius: 45px;
 	background: #eaeaea;
 	box-shadow:  14px 14px 22px #d0d0d0,
              	-14px -14px 22px #ffffff;
-	font-size: 18pt;
-
+	font-size: clamp(10pt, 2vw, 72pt);
 }
 
 #start-button{
-	margin-top: 60px;
+	margin-top: 40px;
 	padding: 100px 30px;
 }
 
 #reference-button{
-	padding: 40px 20px;
+	padding: 40px 30px;
 }
 
 #magnifying-glass{
