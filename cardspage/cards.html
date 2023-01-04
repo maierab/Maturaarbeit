@@ -14,12 +14,30 @@
     </header>
 
     <div id="settings-menu" style="display: none;">
-      helo wold
+      shufl
       <label class="switch">
-        <input type="checkbox" id="slider-option-shuffled" onclick="toggleShuffle()">
+        <input type="checkbox" id="slider-option-shuffled" onclick="configUpdated()">
         <span class="slider"></span>
       </label>
-      <button id="settings-close-button" onclick="closeSettings()">Close</button>
+      <div class="include-select-menu">
+        <label class="container2">both
+          <input type="radio" checked="checked" name="include-selection" id="slider-option-both" onclick="configUpdated()">
+          <span class="checkmark"></span>
+        </label>
+        <br>
+        <label class="container2">basic only
+          <input type="radio" checked="checked" name="include-selection" id="slider-option-onlybasic" onclick="configUpdated()">
+          <span class="checkmark"></span>
+        </label>
+        <br>
+        <label class="container2">voiced only
+          <input type="radio" checked="checked" name="include-selection" id="slider-option-onlyvoiced" onclick="configUpdated()">
+          <span class="checkmark"></span>
+        </label>
+        <br>
+      </div>
+     
+      <button id="settings-close-button" onclick="closeSettings()">CLOSE</button>
     </div>
 
     <div class="container">

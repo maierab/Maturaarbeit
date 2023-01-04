@@ -94,6 +94,21 @@ var index = -1;
 var japaneseish = false;
 var flippied = false;
 
+function loadConfig() {
+    document.getElementById("slider-option-shuffled").checked = (localStorage.getItem("shuffled") ?? "false") === "true";
+    document.getElementById("slider-option-onlyvoiced").checked = (localStorage.getItem("onlyvoiced") ?? "false") === "true";
+    document.getElementById("slider-option-onlybasic").checked = (localStorage.getItem("onlybasic") ?? "false") === "true";
+
+
+    updateCards();
+}
+
+function saveConfig() {
+    localStorage.setItem("shuffled", document.getElementById("slider-option-shuffled").checked.toString());
+    localStorage.setItem("onlybasic", document.getElementById("slider-option-onlybasic").checked.toString());
+    localStorage.setItem("onlyvoiced", document.getElementById("slider-option-onlyvoiced").checked.toString());
+}
+
 function next() {
     if (index + 1 < KARTEN.length) {
         index = index + 1;
@@ -130,6 +145,7 @@ function flip() {
 }
 
 window.onload = function() {
+    loadConfig();
     next();
     document.getElementById("flip-card-everything").addEventListener("click", flip); //had to put this here cause the id doesnt exist until it has loaded in
 };
@@ -177,13 +193,33 @@ function closeSettings() {
     document.getElementById("settings-menu").style.display = "none";
 }
 
-function toggleShuffle() {
-    KARTEN = document.getElementById("slider-option-shuffled").checked
-        ? shuffleArray(KARTEN_ORIGINAL)
-        : cloneArray(KARTEN_ORIGINAL);
+function configUpdated() {
+    saveConfig();
+    updateCards();
 
     index = -1;
     next();
+}
+
+function updateCards() {
+    let karten = cloneArray(KARTEN_ORIGINAL);
+
+    //if onlybasic is enabled, filter out all the cards that are not basic
+    if (document.getElementById("slider-option-onlybasic").checked) {
+        karten = karten.filter(card => card.category === "basic");
+    }
+
+    //if onlyvoiced is enabled, filter out all the cards that are not voiced
+    if (document.getElementById("slider-option-onlyvoiced").checked) {
+        karten = karten.filter(card => card.category === "voiced");
+    }
+
+    //if shuffle is enabled, shuffle the array
+    if (document.getElementById("slider-option-shuffled").checked) {
+        karten = shuffleArray(karten);
+    }
+
+    KARTEN = karten;
 }
 
 function cloneArray(array) {
