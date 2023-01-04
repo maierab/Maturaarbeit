@@ -14,30 +14,57 @@
     </header>
 
     <div id="settings-menu" style="display: none;">
-      shufl
-      <label class="switch">
-        <input type="checkbox" id="slider-option-shuffled" onclick="configUpdated()">
-        <span class="slider"></span>
-      </label>
-      <div class="include-select-menu">
-        <label class="container2">both
-          <input type="radio" checked="checked" name="include-selection" id="slider-option-both" onclick="configUpdated()">
-          <span class="checkmark"></span>
-        </label>
+      <div id="settings-background" onclick="closeSettings()"></div>
+      <div id="settings-container">
+        <table>
+          <tr>
+            <td>
+              Shuffle
+            </td>
+            <td>
+              <label class="switch">
+                <input type="checkbox" id="slider-option-shuffled" onclick="configUpdated()">
+                <span class="slider"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Show All
+            </td>
+            <td>
+              <label class="container2">
+                <input type="radio" checked="checked" name="include-selection" id="slider-option-both" onclick="configUpdated()" onkeyup="event.preventDefault()">
+                <span class="checkmark"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Show Only Basic
+            </td>
+            <td>
+              <label class="container2">
+                <input type="radio" checked="checked" name="include-selection" id="slider-option-onlybasic" onclick="configUpdated()" onkeyup="event.preventDefault()">
+                <span class="checkmark"></span>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Show Only Voiced
+            </td>
+            <td>
+              <label class="container2">
+                <input type="radio" checked="checked" name="include-selection" id="slider-option-onlyvoiced" onclick="configUpdated()" onkeyup="event.preventDefault()">
+                <span class="checkmark"></span>
+              </label>
+            </td>
+          </tr>
+        </table>
         <br>
-        <label class="container2">basic only
-          <input type="radio" checked="checked" name="include-selection" id="slider-option-onlybasic" onclick="configUpdated()">
-          <span class="checkmark"></span>
-        </label>
-        <br>
-        <label class="container2">voiced only
-          <input type="radio" checked="checked" name="include-selection" id="slider-option-onlyvoiced" onclick="configUpdated()">
-          <span class="checkmark"></span>
-        </label>
-        <br>
+        <button id="settings-close-button" onclick="closeSettings()">CLOSE</button>
       </div>
-     
-      <button id="settings-close-button" onclick="closeSettings()">CLOSE</button>
     </div>
 
     <div class="container">

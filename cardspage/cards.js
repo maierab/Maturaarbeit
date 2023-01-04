@@ -151,6 +151,11 @@ window.onload = function() {
 };
 
 document.addEventListener('keydown', (e) => {
+    if (document.getElementById("settings-menu").style.display !== "none") {
+        //settings menu is open
+        return;
+    }
+
     if (e.code === "Space") {
         flip();
     }
