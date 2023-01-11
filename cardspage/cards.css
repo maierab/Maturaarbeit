@@ -49,11 +49,13 @@ button {
 
 .container{
     display: flex;    
-    margin-top: 4vh;
+    margin-top: -2vh;
 
     flex-direction: row;
     height: 88vh;
     margin-bottom: auto;
+
+    overflow: hidden;
 }
 
 
@@ -88,11 +90,7 @@ button {
   
 .flip-card-inner {
     position: relative;
-    /*width: 420px;
-    height: 300px;
 
-    width: fit-content;
-    height: fit-content;*/
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -109,7 +107,7 @@ button {
                 -14px -14px 22px #ffffff;  
     font-size: clamp(40pt, 6vw, 72pt);
     
-    padding: 13vh 20vw;
+    padding: 26vh 20vw;
     
     position: absolute;
     -webkit-backface-visibility: hidden; /* for Safari */
@@ -136,8 +134,8 @@ button {
 
     width: 50vw;
 
-    background-color: #bebebe;
-
+    background-color: #e0e0e0;
+    box-shadow: 0px 12px 30px -10px rgba(0, 0, 0, 0.5);
     z-index: 10;
 }
 
@@ -145,8 +143,8 @@ button {
  .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 3.75em;
+    height: 2.125em;
   }
   
   /* Hide default HTML checkbox */
@@ -167,16 +165,16 @@ button {
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-    border-radius: 34px;
+    border-radius: 2.125em;
   }
   
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: 1.625em;
+    width: 1.625em;
+    left: 0.25em;
+    bottom: 0.25em;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
@@ -192,9 +190,9 @@ button {
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(1.625em);
+    -ms-transform: translateX(1.625em);
+    transform: translateX(1.625em);
   }
   
   .container2 {
@@ -269,3 +267,23 @@ button {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
   }
+
+.settings-table {
+  text-align: left;
+  align-items: left;
+
+}
+
+#settings-close-button {
+  font-size: clamp(20pt, 2vw, 44pt);
+  color: #0B6F62;
+  margin-bottom: 2vw;
+}
+
+#settings-close-button:hover {
+  color: #095D52;
+}
+
+.table-spacer {
+  height:10px
+}
