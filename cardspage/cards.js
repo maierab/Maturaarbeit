@@ -171,6 +171,9 @@ document.addEventListener('keydown', (e) => {
     if (e.code === "ArrowLeft") {
         prev();
     }
+    if (e.code === "Escape") {
+        closeSettings();
+    }
 });
 
 let touchstartX = 0
