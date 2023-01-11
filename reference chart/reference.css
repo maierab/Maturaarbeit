@@ -8,7 +8,7 @@
     height: 3.5vmax;
     vertical-align: top;
     font-size: clamp(9pt, 1.2vw, 50pt);
-    color:gray;
+    color:#7A7A7A;
 }
 
 table{
@@ -17,20 +17,10 @@ table{
     width: 30%;
 }
 
-/*
-another color schemem option
-
-.identifyer {
-    color: #3c3c3c;
-    background-color: #33ebbd;
-    height: 30px;
-} 
-*/
-
 .identifyer {
     color: #0F9482;
-    height: 30px;
     /*row-gap: 100px;*/
     /*padding-top: 100px;*/
     border-spacing: 0 100px;
+    height: 30px;
 }
