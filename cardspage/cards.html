@@ -17,7 +17,11 @@
     <div id="settings-menu" style="display: none;">
       <div id="settings-background" onclick="closeSettings()"></div>
       <div id="settings-container">
-        <table>
+        <button id="settings-close-button" onclick="closeSettings()">&#10006;</button>
+        <table class="settings-table">
+          <tr id="settings-title">
+            <td colspan="2">CARD SETTINGS</td>
+          </tr>
           <tr>
             <td class="settings-table">
               Shuffle
@@ -32,7 +36,7 @@
           <tr class="table-spacer"></tr>
           <tr>
             <td class="settings-table">
-              Show All
+              Basic + Voiced Symbols
             </td>
             <td>
               <label class="container2">
@@ -43,7 +47,7 @@
           </tr>
           <tr>
             <td class="settings-table">
-              Show Only Basic
+              Basic Symbols Only
             </td>
             <td>
               <label class="container2">
@@ -54,7 +58,7 @@
           </tr>
           <tr>
             <td class="settings-table">
-              Show Only Voiced
+              Voiced Symbols Only
             </td>
             <td>
               <label class="container2">
@@ -65,7 +69,6 @@
           </tr>
         </table>
         <br>
-        <button id="settings-close-button" onclick="closeSettings()">CLOSE</button>
       </div>
     </div>
 

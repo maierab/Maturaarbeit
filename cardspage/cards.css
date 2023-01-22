@@ -55,6 +55,7 @@ button {
 
 .settings-icon:hover{
    color:#c6c6c6;
+   cursor: pointer;
 }
 
 .settings-icon:active {
@@ -115,14 +116,21 @@ button {
 
 #settings-container {
     position: absolute;
-    left: 25vw;
-    right: 25vw;
+    right: 0;
 
-    width: 50vw;
+    width: 30vw;
+    min-width: 250px;
 
     background-color: #e0e0e0;
     box-shadow: 0px 12px 30px -10px rgba(0, 0, 0, 0.5);
-    z-index: 10;
+    z-index: 10; /*makes sure it appears on top of all other elements*/
+}
+
+#settings-title{
+  height: clamp(30px, 10vh, 100px);
+
+  color: #0B6F62;
+  font-size: clamp(15pt, 2vw, 20pt);
 }
 
  /* The switch - the box around the slider */
@@ -257,18 +265,23 @@ button {
   text-align: left;
   align-items: left;
 
+  margin-top: 1vh;
+  padding-left: 10px;
 }
 
 #settings-close-button {
-  font-size: clamp(20pt, 2vw, 44pt);
+  font-size: clamp(16pt, 2vw, 44pt);
   color: #0B6F62;
-  margin-bottom: 2vw;
+  display: block;
+  float: right;
+  margin-right: 8px;
 }
 
 #settings-close-button:hover {
   color: #095D52;
+  cursor: pointer;
 }
 
 .table-spacer {
-  height:10px
+  height: 10px;
 }
