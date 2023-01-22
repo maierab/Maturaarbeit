@@ -57,6 +57,14 @@ table {
 	font-size: clamp(10pt, 2vw, 72pt);
 }
 
+.main-button:active {
+	transform: translateY(2px);
+	
+	background: #e0e0e0;
+	box-shadow:  2px 2px 6px #bebebe,
+				-2px -2px 6px #ffffff;
+}
+
 #start-button{
 	margin-top: 40px;
 	padding: 100px 30px;
