@@ -1,4 +1,8 @@
 
+.reference-body{
+    color:#F7F7F7;
+}
+
 .kana-row{
     font-size: clamp(16pt, 2vw, 64pt);
     color:#1f1f1f;
@@ -18,9 +22,7 @@ table{
 }
 
 .identifyer {
-    color: #0F9482;
-    /*row-gap: 100px;*/
-    /*padding-top: 100px;*/
+    color: #0D8272;
     border-spacing: 0 100px;
     height: 30px;
 }
