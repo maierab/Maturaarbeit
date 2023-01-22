@@ -32,6 +32,9 @@ button {
              -2px -2px 6px #ffffff;
 }
 
+.arrow-button:hover {
+  cursor: pointer;
+}
 
 
 .container{
