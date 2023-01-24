@@ -26,3 +26,22 @@ table{
     border-spacing: 0 100px;
     height: 30px;
 }
+
+@media only screen and (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+
+    .kana-row {
+        font-size: clamp(20pt, 2vw, 64pt);
+    }
+
+    .romaji-row {
+        font-size: clamp(12pt, 1.2vw, 50pt);
+        height: 6vmax;
+    }
+
+    .identifyer {
+        height: 5vh;
+    }
+}
