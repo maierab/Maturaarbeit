@@ -67,7 +67,7 @@ table {
 
 #start-button{
 	margin-top: 40px;
-	padding: 100px 30px;
+	padding: 20vh 30px;
 }
 
 #reference-button{
@@ -109,3 +109,21 @@ table {
 	position: absolute;
 	right: 0;
 }
+
+
+
+@media only screen and (max-width: 600px) {
+	.main-button {
+	  width: 65%;
+	  font-size: clamp(12pt, 6vw, 72pt);
+	}
+
+	#reference-button{
+		padding: 50px 30px;
+	}
+
+	#magnifying-glass {
+		font-size: 8vw;
+		top: 10px; 
+	}
+  }
