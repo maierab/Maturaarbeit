@@ -114,6 +114,7 @@ function next() {
         index = index + 1;
         japaneseish = false;
         updateCardText();
+        document.getElementById("progress-tracker").innerText = index + 1 + "/" + KARTEN.length;
     }
 }
 
@@ -122,6 +123,7 @@ function prev() {
         index = index - 1;
         japaneseish = false;
         updateCardText();
+        document.getElementById("progress-tracker").innerText = index + 1 + "/" + KARTEN.length;
     }
 }
 
@@ -180,8 +182,8 @@ let touchstartX = 0
 let touchendX = 0
     
 function checkDirection() {
-  if (touchendX < touchstartX) next(); //for left swipes
-  if (touchendX > touchstartX) prev(); //for right swipes
+  if (touchendX < touchstartX - 50) next(); //for left swipes
+  if (touchendX > touchstartX + 50) prev(); //for right swipes
 }
 
 document.addEventListener('touchstart', e => {
@@ -245,3 +247,5 @@ function shuffleArray(array) {
   
     return array;
 }
+
+
