@@ -6,7 +6,6 @@
     background: #e0e0e0;
     box-shadow:  7px 7px 13px #bebebe, 
     -7px -7px 13px #ffffff;
-
 }
 
 button {
@@ -91,22 +90,22 @@ button {
 }
 
 .flip-card-front, .flip-card-back {
-    border-radius: 45px;
-    background: #e0e0e0;
-    box-shadow:  14px 14px 22px #d0d0d0,
-                -14px -14px 22px #ffffff;  
-    font-size: clamp(40pt, 6vw, 72pt);
-    
-    padding: 26vh 22vw;
-    
-    position: absolute;
-    -webkit-backface-visibility: hidden; /* for Safari */
-    backface-visibility: hidden;
+  border-radius: 45px;
+  background: #e0e0e0;
+  box-shadow:  14px 14px 22px #d0d0d0,
+              -14px -14px 22px #ffffff;  
+  font-size: clamp(40pt, 6vw, 72pt);
+  
+  padding: 26vh 22vw;
+  
+  position: absolute;
+  -webkit-backface-visibility: hidden; /* for Safari */
+  backface-visibility: hidden;
 
-    display: flex;
-    justify-content: center;
-    width: 0;
-    height: 0;
+  display: flex;
+  justify-content: center;
+  width: 0;
+  height: 0;
 }
 
 .flip-card-inner-flipped {
@@ -253,16 +252,22 @@ button {
       background: white;
   }
 
-  #settings-background {
-    display: block;
-    z-index: 5;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
+#settings-background {
+  display: block;
+  z-index: 5;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#progress-tracker {
+  margin: auto;
+  color: #f3f3f6;
+  font-weight: bold;
+}
 
 .settings-table {
   text-align: left;
@@ -287,4 +292,14 @@ button {
 
 .table-spacer {
   height: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .arrow-button {
+    display: none;
+  }
+  .flip-card-front, .flip-card-back {
+    padding: 30vh 36vw;
+  }
 }
