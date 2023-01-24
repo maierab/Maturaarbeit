@@ -182,8 +182,8 @@ let touchstartX = 0
 let touchendX = 0
     
 function checkDirection() {
-  if (touchendX < touchstartX - 50) next(); //for left swipes
-  if (touchendX > touchstartX + 50) prev(); //for right swipes
+  if (touchendX < touchstartX - 30) next(); //for left swipes
+  if (touchendX > touchstartX + 30) prev(); //for right swipes
 }
 
 document.addEventListener('touchstart', e => {
