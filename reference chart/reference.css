@@ -1,28 +1,28 @@
 
-.reference-body{
+.reference-body {
     color:#F7F7F7;
 }
 
-.kana-row{
+.kana-row {
     font-size: clamp(16pt, 2vw, 64pt);
-    color:#1f1f1f;
+    color:#000000;
 }
 
-.romaji-row{
+.romaji-row {
     height: 3.5vmax;
     vertical-align: top;
     font-size: clamp(9pt, 1.2vw, 50pt);
-    color:#7A7A7A;
+    color:#636363;
 }
 
-table{
+table {
     border-collapse: separate; 
     text-align: center;
     width: 30%;
 }
 
 .identifyer {
-    color: #0D8272;
+    color: #0A695E;
     border-spacing: 0 100px;
     height: 30px;
 }

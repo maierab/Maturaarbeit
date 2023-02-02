@@ -91,14 +91,13 @@ KARTEN = [
 const KARTEN_ORIGINAL = KARTEN.slice();
 
 var index = -1;
-var japaneseish = false;
 var flippied = false;
 
 function loadConfig() {
     document.getElementById("slider-option-shuffled").checked = (localStorage.getItem("shuffled") ?? "false") === "true";
     document.getElementById("slider-option-onlyvoiced").checked = (localStorage.getItem("onlyvoiced") ?? "false") === "true";
     document.getElementById("slider-option-onlybasic").checked = (localStorage.getItem("onlybasic") ?? "false") === "true";
-
+    document.getElementById("slider-option-both").checked = !document.getElementById("slider-option-onlyvoiced").checked && !document.getElementById("slider-option-onlybasic").checked;
 
     updateCards();
 }
@@ -112,7 +111,6 @@ function saveConfig() {
 function next() {
     if (index + 1 < KARTEN.length) {
         index = index + 1;
-        japaneseish = false;
         updateCardText();
         document.getElementById("progress-tracker").innerText = index + 1 + "/" + KARTEN.length;
     }
@@ -121,7 +119,6 @@ function next() {
 function prev() {
     if (index > 0) {
         index = index - 1;
-        japaneseish = false;
         updateCardText();
         document.getElementById("progress-tracker").innerText = index + 1 + "/" + KARTEN.length;
     }
@@ -129,11 +126,11 @@ function prev() {
 
 function updateCardText() {
     if (!flippied) {
-        document.getElementById("card-front").innerHTML = KARTEN[index].latin_representation;
-        document.getElementById("card-back").innerHTML = KARTEN[index].kana_representation;
-    } else {
         document.getElementById("card-front").innerHTML = KARTEN[index].kana_representation;
         document.getElementById("card-back").innerHTML = KARTEN[index].latin_representation;
+    } else {
+        document.getElementById("card-front").innerHTML = KARTEN[index].latin_representation;
+        document.getElementById("card-back").innerHTML = KARTEN[index].kana_representation;
     }
 }
 
